@@ -71,6 +71,8 @@ target_sources(${MAIN_LIBRARY_NAME}
     PRIVATE
         src/Produs.cpp
         src/Client.cpp
+        src/Curier.cpp
+        src/Comanda.cpp
         src/Example.cpp
         src/internal/Detail.cpp
 )
