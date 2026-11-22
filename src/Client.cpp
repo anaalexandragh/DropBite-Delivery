@@ -24,9 +24,9 @@ void Client::actualizeazaAdresa(const std::string& nouaAdresa) {
 }
 
    std::ostream& operator<<(std::ostream& out, const Client& client) {
-        out << "Client: " << client.nume << " (" << client.email
-            << "), Adresa: " << client.adresa
-            << ", Tel: " << client.telefon;
+        out << "Client: " << client.getNume() << " (" << client.getEmail()
+            << "), Adresa: " << client.getAdresa()
+            << ", Tel: " << client.getTelefon();
         return out;
 }
 

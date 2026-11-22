@@ -22,6 +22,6 @@ void Produs::aplicaReducere(double procent) {
 }
 
     std::ostream& operator<<(std::ostream& out, const Produs& produs) {
-        out << produs.nume << " (" << produs.gramaj << "g) - " << produs.pret << " RON";
+        out << produs.getNume() << " (" << produs.getGramaj() << "g) - " << produs.getPret() << " RON";
         return out;
 }

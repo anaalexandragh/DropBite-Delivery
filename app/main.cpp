@@ -16,10 +16,15 @@ int main() {
     pizza.aplicaReducere(10.0); // 10% reducere
 
     
-    Client client1("Ana Maria", "ana@email.com", "Str. Academiei 14", "0712345678");// clientul
+    // Clientul
+    Client client1("Ana Maria", "ana@email.com", "Str. Academiei 14", "0712345678");
+    client1.actualizeazaAdresa("Str. Academiei 14, Et. 2");
 
-    
-    Curier curier1("Mihai Ionescu", "scuter");//curierul
+    // Curierul
+    Curier curier1("Mihai Ionescu", "scuter");
+    if (curier1.isDisponibil()) {
+        curier1.setDisponibil(false); // Curierul preia comanda si devine ocupat
+    }
 
     
     Comanda comanda1(101, client1, curier1, 10.0); // taxa livrare: 10 lei     // Comanda 
@@ -49,11 +54,12 @@ int main() {
 
     
     double distanta = 4.5; // km              //Estimare timp si finalizare livrare
-    std::cout << "Curierul " << curier1.getNume() << " estimeaza livrarea la: "
-              << curier1.estimeazaTimpLivrare(distanta) << " minute.\n";
+    std::cout << "Curierul " << curier1.getNume() << " livreaza cu " << curier1.getVehicul()
+              << " si estimeaza livrarea la: " << curier1.estimeazaTimpLivrare(distanta) << " minute.\n";
 
     curier1.finalizeazaLivrare();
     std::cout << "Status curier dupa livrare: " << curier1 << "\n";
+    std::cout << "Comenzi livrate in total: " << curier1.getComenziLivrate() << "\n";
 
     return 0;
 }

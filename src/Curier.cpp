@@ -44,8 +44,8 @@
     }
 
     std::ostream& operator<<(std::ostream& out, const Curier& curier) {
-        out << "Curier: " << curier.nume << " [" << curier.vehicul << "]"
-            << " - Status: " << (curier.disponibil ? "Disponibil" : "Ocupat")
-            << " (Livrari: " << curier.comenziLivrate << ")";
+        out << "Curier: " << curier.getNume() << " [" << curier.getVehicul() << "]"
+            << " - Status: " << (curier.isDisponibil() ? "Disponibil" : "Ocupat")
+            << " (Livrari: " << curier.getComenziLivrate() << ")";
         return out;
     }
