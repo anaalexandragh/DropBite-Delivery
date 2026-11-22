@@ -1,4 +1,4 @@
-# Nu primesc notă pentru că nu am pus titlu și descriere
+# DropBite-Delivery
 
 ### Folosiți template-ul corespunzător grupei voastre!
 
@@ -33,8 +33,9 @@ O cerință nu se consideră îndeplinită dacă este realizată doar prin cod g
 
 ### Tema 0
 
-- [ ] Nume proiect (poate fi schimbat ulterior)
-- [ ] Scurtă descriere a temei alese, ce v-ați propus să implementați
+- [x] Nume proiect (poate fi schimbat ulterior) - **DropBite-Delivery**
+- [x] Scurtă descriere a temei alese, ce v-ați propus să implementați:
+  **DropBite-Delivery** is an application for managing food orders. It keeps track of menu items, customer details, and couriers, handling the total cost calculation and order delivery.
 
 ## Tema 1
 
