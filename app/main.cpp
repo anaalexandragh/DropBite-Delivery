@@ -1,8 +1,11 @@
 #include <iostream>
-#include "Produs.h"
+#include <json.hpp>
 #include "Client.h"
+#include "Produs.h"
 #include "Curier.h"
 #include "Comanda.h"
+
+using nlohmann::json;
 
 int main() {
     std::cout << "=== DROPBITE DELIVERY PLATFORM ===\n\n";
@@ -15,9 +18,30 @@ int main() {
   
     pizza.aplicaReducere(10.0); // 10% reducere
 
+    // json j = json::parse(R"({"happy": true})");
+    // std::cout << "JSON test: " << j.dump() << "\n";
     
     // Clientul
-    Client client1("Ana Maria", "ana@email.com", "Str. Academiei 14", "0712345678");
+    // Client client1("Ana Maria", "ana@email.com", "Str. Academiei 14", "0712345678");
+    FILE *clienti = fopen("Date/clienti.json", "r");
+    std::string jsonContent;
+    if (clienti) {
+        char buffer[256];
+        
+        while (fgets(buffer, sizeof(buffer), clienti)) {
+            jsonContent += buffer;
+        }
+        fclose(clienti);
+    }
+    json clientJson = json::parse(jsonContent);
+        std::string nume = clientJson["nume"];
+        std::string email = clientJson["email"];
+        std::string adresa = clientJson["adresa"];
+        std::string telefon = clientJson["telefon"];
+
+    Client client1(nume, email, adresa, telefon);
+    std::cout << "Client creat cu succes: " << client1 << "\n";
+
     client1.actualizeazaAdresa("Str. Academiei 14, Et. 2");
 
     // Curierul
@@ -60,6 +84,19 @@ int main() {
     curier1.finalizeazaLivrare();
     std::cout << "Status curier dupa livrare: " << curier1 << "\n";
     std::cout << "Comenzi livrate in total: " << curier1.getComenziLivrate() << "\n";
+
+    FILE *file = fopen("date.txt", "r");
+    if (file) {
+        char buffer[256];
+        while (fgets(buffer, sizeof(buffer), file)) {
+            std::cout << buffer;
+        }
+        fclose(file);
+    } else {
+        std::cerr << "Eroare la deschiderea fișierului date.txt\n";
+    }
+
+    
 
     return 0;
 }

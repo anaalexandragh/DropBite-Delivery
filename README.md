@@ -207,4 +207,5 @@ The [template repository](https://github.com/mcmarius/oop-template) itself is li
 
 ## Resurse
 
+  [Libraries] (https://json.nlohmann.me/)
 - adăugați trimiteri **detaliate** către resursele externe care v-au ajutat sau pe care le-ați folosit

@@ -101,6 +101,7 @@ target_include_directories(${MAIN_LIBRARY_NAME} SYSTEM PUBLIC
 )
 target_include_directories(${MAIN_LIBRARY_NAME} SYSTEM PRIVATE
     ${EXT_PRIVATE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/ext/include
 )
 
 # target_include_directories(${MAIN_EXECUTABLE_NAME} SYSTEM PRIVATE ${<SomeLib>_SOURCE_DIR}/include)
@@ -130,7 +131,7 @@ if(APPLE)
     install(FILES ${CMAKE_SOURCE_DIR}/launcher.command DESTINATION ${DESTINATION_DIR})
 endif()
 
-copy_files(FILES tastatura.txt DIRECTORY assets COPY_TO_DESTINATION TARGET_NAME ${MAIN_EXECUTABLE_NAME})
+copy_files(FILES tastatura.txt DIRECTORY Date assets COPY_TO_DESTINATION TARGET_NAME ${MAIN_EXECUTABLE_NAME})
 # copy_files(FILES tastatura.txt config.json DIRECTORY images sounds COPY_TO_DESTINATION TARGET_NAME ${MAIN_EXECUTABLE_NAME})
 # copy_files(DIRECTORY images sounds COPY_TO_DESTINATION TARGET_NAME ${MAIN_EXECUTABLE_NAME})
 
