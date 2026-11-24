@@ -1,0 +1,21 @@
+[
+    {"nume": "Vasile Marin", 
+    "vehicul": "masina",
+    "disponibil": true
+},
+{
+    "nume": "Ioan Serbanescu",
+    "vehicul": "bicicleta",
+    "disponibil": true
+},
+{
+    "nume": "Lucian Gheorghe",
+    "vehicul": "scuter",
+    "disponibil": false
+},
+{
+    "nume": "Elena Maria Munteanu",
+    "vehicul": "scuter",
+    "disponibil": true
+}
+]

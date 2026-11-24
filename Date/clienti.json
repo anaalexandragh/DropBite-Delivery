@@ -1,6 +1,26 @@
-{
+[
+    {
     "nume" : "Ana Maria",
     "email" : "ana@email.com",
     "adresa" : "Str. Academiei 14",
     "telefon" : "0712345678"
+},
+{
+    "nume" : "Ion Popescu",
+    "email" : "ion@email.com",
+    "adresa" : "Str. Mihai Viteazul 25",
+    "telefon" : "0798765432"
+},
+{
+    "nume" : "Elena Ionescu",
+    "email" : "elena@email.com",
+    "adresa" : "Str. Elena 10",
+    "telefon" : "0754557555"
+},
+{
+    "nume" : "Mihai Georgescu",
+    "email" : "mihai@email.com",
+    "adresa" : "Str. Lavandei 15",
+    "telefon" : "0798768432"
 }
+]

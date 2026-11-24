@@ -1,0 +1,22 @@
+[
+    {"nume": "Pizza Margherita",
+    "pret": 25.00,
+    "gramaj": 500
+},
+{
+    "nume": "Paste Carbonara",
+    "pret": 36.00,
+    "gramaj": 400
+    },
+    {
+    "nume": "Burger Vita Angus",
+    "pret": 47.00,
+    "gramaj": 450
+
+},
+{
+    "nume": "Papanasi cu dulceata",
+    "pret": 25.00,
+    "gramaj": 350
+    
+}]
