@@ -5,7 +5,7 @@
 #include <iostream>
 
 class Produs {
-private:
+private:                                  //atributele private
     std:: string nume; 
     double pret;
     int gramaj;

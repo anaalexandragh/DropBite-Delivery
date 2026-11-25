@@ -8,8 +8,8 @@
     #include "Curier.h"
 
     class Comanda {
-    private:
-        int idComanda;
+    private:                             //atributele private
+        int idComanda;           
         Client client;
         Curier curier;
         std::vector<Produs> produse;

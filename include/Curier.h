@@ -14,12 +14,12 @@
     public:
         Curier(const std::string& nume, const std::string& vehicul, bool disponibil = true); //constructor de initializare
 
-        const std::string& getNume() const;
-        const std::string& getVehicul() const;
-        bool isDisponibil() const;
-        int getComenziLivrate() const;
+        const std::string& getNume() const;          //getter for nume
+        const std::string& getVehicul() const;         //getter for vehicul
+        bool isDisponibil() const;                     //getter for disponibil
+        int getComenziLivrate() const;                   //getter for comenziLivrate
 
-        void setDisponibil(bool stare);     //setter
+        void setDisponibil(bool stare);     //setter--modifica atributul disponibil
         void finalizeazaLivrare();
         int estimeazaTimpLivrare(double distantaKm) const;
 

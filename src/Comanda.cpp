@@ -1,22 +1,25 @@
     #include "Comanda.h"
 
+    //constructor de initializare cu parametrii
     Comanda::Comanda(int id, const Client& client, const Curier& curier, double taxaLivrare)
         : idComanda(id), client(client), curier(curier), taxaLivrare(taxaLivrare), discount(0.0) {
     }
 
-    
-    Comanda::Comanda(const Comanda& other)// Constructorul de copiere
-        : idComanda(other.idComanda),
-          client(other.client),
+
+    // Constructorul de copiere --obiect nou
+    Comanda::Comanda(const Comanda& other)
+        : idComanda(other.idComanda),      //lista de initializare a constuctorului de copiere
+          client(other.client),              //copiez atributul din obiectul sursă "other" în noul atribut
           curier(other.curier),
           produse(other.produse),
           taxaLivrare(other.taxaLivrare),
           discount(other.discount) {
     }
 
-    
-    Comanda& Comanda::operator=(const Comanda& other) {  // Operatorul de atribuire prin copiere (operator=)
-        if (this != &other) {
+
+     // Operatorul de atribuire prin copiere (operator=) --copiez datele peste alt obiect
+    Comanda& Comanda::operator=(const Comanda& other) { 
+        if (this != &other) {                                    //ma asigur ca nu auto-atribui c1=c1
             idComanda = other.idComanda;
             client = other.client;
             curier = other.curier;
@@ -24,12 +27,12 @@
             taxaLivrare = other.taxaLivrare;
             discount = other.discount;
         }
-        return *this;
+        return *this;                                //dereferentiez, returnez obiectul curent
     }
 
     
-    Comanda::~Comanda() {// Destructorul
-      
+    Comanda::~Comanda() {// Destructorul, elibereaza memoria, apeleaza pe rand 
+      //desstructorii din produse(std::vector), curier, client
     }
 
     //Functiile
@@ -48,8 +51,8 @@
         for (const auto& p : produse) {
             totalProduse += p.getPret();
         }
-        double total = totalProduse + taxaLivrare - discount;
-        return (total > 0.0) ? total : 0.0; // totalul nu poate fi negativ
+        double total = totalProduse + taxaLivrare - discount;           //calcul de achitat total
+        return (total > 0.0) ? total : 0.0;                 // totalul nu poate fi negativ
     }
 
     std::ostream& operator<<(std::ostream& out, const Comanda& comanda) {
@@ -64,7 +67,7 @@
             out << "  (Niciun produs adaugat)\n";
         } else {
             for (const auto& p : comanda.produse) {
-                out << "  * " << p << "\n"; // Apeleaza operator<< din Produs
+                out << "  * " << p << "\n";           // Apeleaza operator<< din Produs
             }
         }
 

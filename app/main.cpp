@@ -20,7 +20,7 @@ int main() {
     //Citire date din fisiere json
     std::ifstream fisierProduse("Date/produse.json");
     if (!fisierProduse.is_open()) {
-        std::cerr << "Eroare la deschiderea Date/produse.json!\n";
+        std::cerr << "Eroare la deschiderea Date/produse.json!\n";  //mesaj eroare
         return 1;
     }
     json produseJson;
@@ -78,12 +78,12 @@ int main() {
     std::cout << comanda1 << "\n\n";
 
     //Testare Constructor de Copiere
-    std::cout << ">>> Test: Constructor de Copiere (Comanda copie = comanda1)\n";
+    std::cout << "Test: Constructor de Copiere (Comanda copie = comanda1)\n";
     Comanda comandaCopie = comanda1;
     std::cout << "Copie creata cu succes. Total copie: " << comandaCopie.calculeazaTotal() << " RON\n\n";
 
     //Testare Operator de Atribuire
-    std::cout << ">>> Test: Operator de Atribuire (comandaAlta = comanda1)\n";
+    std::cout << "Test: Operator de Atribuire (comandaAlta = comanda1)\n";
     Client client2(clientiJson[1]["nume"], clientiJson[1]["email"], clientiJson[1]["adresa"], clientiJson[1]["telefon"]);
     Curier curier2(curieriJson[1]["nume"], curieriJson[1]["vehicul"], curieriJson[1]["disponibil"]);
     Comanda comandaAlta(923, client2, curier2, 5.0);

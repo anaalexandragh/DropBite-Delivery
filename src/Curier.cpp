@@ -1,36 +1,37 @@
-    #include "Curier.h"
+#include "Curier.h"
 
-    Curier::Curier(const std::string& nume, const std::string& vehicul, bool disponibil)
-        : nume(nume), vehicul(vehicul), disponibil(disponibil), comenziLivrate(0) {
-    }
+Curier::Curier(const std::string& nume, const std::string& vehicul, bool disponibil)
+    : nume(nume), vehicul(vehicul), disponibil(disponibil), comenziLivrate(0) {
+}
 
-    const std::string& Curier::getNume() const {
-        return nume;
-    }
+//Getteri
+const std::string& Curier::getNume() const {
+    return nume;
+}
 
-    const std::string& Curier::getVehicul() const {
-        return vehicul;
-    }
+const std::string& Curier::getVehicul() const {
+    return vehicul;
+}
 
-    bool Curier::isDisponibil() const {
-        return disponibil;
-    }
+bool Curier::isDisponibil() const {
+    return disponibil;
+}
 
-    int Curier::getComenziLivrate() const {
-        return comenziLivrate;
-    }
+int Curier::getComenziLivrate() const {
+    return comenziLivrate;
+}
 
-    void Curier::setDisponibil(bool stare) {      //setter
-        disponibil = stare;
-    }
+void Curier::setDisponibil(bool stare) {      //setter
+    disponibil = stare;
+}
 
-    void Curier::finalizeazaLivrare() {
-        comenziLivrate++;
-        disponibil = true; // dupa livrare devine din nou liber
-    }
+void Curier::finalizeazaLivrare() {
+    comenziLivrate++;
+    disponibil = true; // dupa livrare devine din nou liber
+}
 
-    int Curier::estimeazaTimpLivrare(double distantaKm) const {
-        int minutePerKm = 5; 
+int Curier::estimeazaTimpLivrare(double distantaKm) const {
+    int minutePerKm = 5; 
 
         if (vehicul == "scuter") {
             minutePerKm = 3;
@@ -43,9 +44,9 @@
         return static_cast<int>(distantaKm * minutePerKm);    //rotunjesc timpul de livrare la cel mai apropiat intreg
     }
 
-    std::ostream& operator<<(std::ostream& out, const Curier& curier) {
-        out << "Curier: " << curier.getNume() << " [" << curier.getVehicul() << "]"
-            << " - Status: " << (curier.isDisponibil() ? "Disponibil" : "Ocupat")
-            << " (Livrari: " << curier.getComenziLivrate() << ")";
-        return out;
+std::ostream& operator<<(std::ostream& out, const Curier& curier) {
+    out << "Curier: " << curier.getNume() << " [" << curier.getVehicul() << "]"
+        << " - Status: " << (curier.isDisponibil() ? "Disponibil" : "Ocupat")
+        << " (Livrari: " << curier.getComenziLivrate() << ")";
+    return out;
     }

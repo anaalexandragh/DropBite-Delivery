@@ -8,8 +8,6 @@
 - 🛵 **Alocare curieri:** Atribuirea unui curier disponibil si contorizarea comenzilor livrate.
 - ⏱️ **Estimarea exactă a timpului de sosire:** Timp ce depinde de distanță și mijlocul de deplasare (bicicletă, scuter, mașină).
 
----
-
 ### Folosiți template-ul corespunzător grupei voastre!
 
 | Laborant  | Link template                                |
@@ -44,7 +42,7 @@ O cerință nu se consideră îndeplinită dacă este realizată doar prin cod g
 ### Tema 0
 
 - [x] Nume proiect (poate fi schimbat ulterior) - **DropBite-Delivery**
-- [x] Scurtă descriere a temei alese, ce v-ați propus să implementați (inclusă în secțiunea de prezentare de la începutul paginii)
+- [x] Scurtă descriere a temei alese, ce v-ați propus să implementați
 
 ## Tema 1
 
@@ -215,6 +213,6 @@ The project is licensed under [AGPLv3](LICENSE).
 The [template repository](https://github.com/mcmarius/oop-template) itself is licensed under [Unlicense](LICENSE.template).
 
 ## Resurse
-
+Librarie utilizata:
 - [nlohmann/json](https://json.nlohmann.me/)
 - adăugați trimiteri **detaliate** către resursele externe care v-au ajutat sau pe care le-ați folosit
