@@ -1,5 +1,14 @@
 # DropBite-Delivery
 
+**DropBite-Delivery** este o platformă modernă de gestionare a livrărilor de mâncare, concepută pentru a optimiza întregul flux de comenzi, de la restaurant până la ușa clientului. Aplicația centralizează meniul, datele clienților și statusul curierilor, calculând automat costurile și gestionând livrările în timp real.
+
+### Funcționalități principale:
+- 🏷️ **Vouchere și promoții inteligente:** Aplicarea dinamică a cupoanelor de reducere și a ofertelor speciale pe comenzi.
+- 🗺️ **Harta restaurantelor din apropiere:** Vizualizarea și explorarea rapidă a localurilor partenere din proximitate.
+- 🛵 **Alocare curieri și estimare timp de livrare:** Urmărirea curierilor disponibili cu estimarea exactă a timpului de sosire în funcție de distanță și mijlocul de deplasare (bicicletă, scuter, mașină).
+
+---
+
 ### Folosiți template-ul corespunzător grupei voastre!
 
 | Laborant  | Link template                                |
@@ -34,13 +43,7 @@ O cerință nu se consideră îndeplinită dacă este realizată doar prin cod g
 ### Tema 0
 
 - [x] Nume proiect (poate fi schimbat ulterior) - **DropBite-Delivery**
-- [x] Scurtă descriere a temei alese, ce v-ați propus să implementați:
-  **DropBite-Delivery** este o platformă modernă de gestionare a livrărilor de mâncare, concepută pentru a optimiza întregul flux de comenzi, de la restaurant până la ușa clientului. Aplicația centralizează meniul, datele clienților și statusul curierilor, calculând automat costurile și gestionând livrările în timp real.
-
-  **Funcționalități principale:**
-  - 🏷️ **Vouchere și promoții inteligente:** Aplicarea dinamică a cupoanelor de reducere și a ofertelor speciale pe comenzi.
-  - 🗺️ **Harta restaurantelor din apropiere:** Vizualizarea și explorarea rapidă a localurilor partenere din proximitate.
-  - 🛵 **Alocare curieri și estimare timp de livrare:** Urmărirea curierilor disponibili cu estimarea exactă a timpului de sosire în funcție de distanță și mijlocul de deplasare (bicicletă, scuter, mașină).
+- [x] Scurtă descriere a temei alese, ce v-ați propus să implementați (inclusă în secțiunea de prezentare de la începutul paginii)
 
 ## Tema 1
 
