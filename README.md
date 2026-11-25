@@ -1,11 +1,12 @@
 # DropBite-Delivery
 
-**DropBite-Delivery** este o platformă modernă de gestionare a livrărilor de mâncare, concepută pentru a optimiza întregul flux de comenzi, de la restaurant până la ușa clientului. Aplicația centralizează meniul, datele clienților și statusul curierilor, calculând automat costurile și gestionând livrările în timp real.
+**DropBite-Delivery** este o platformă de gestionare a livrărilor de mâncare, de la restaurant până la ușa clientului. Aplicația centralizează meniul, datele clienților și statusul curierilor, calculând automat costurile și gestionând livrările.
 
 ### Funcționalități principale:
-- 🏷️ **Vouchere și promoții inteligente:** Aplicarea dinamică a cupoanelor de reducere și a ofertelor speciale pe comenzi.
-- 🗺️ **Harta restaurantelor din apropiere:** Vizualizarea și explorarea rapidă a localurilor partenere din proximitate.
-- 🛵 **Alocare curieri și estimare timp de livrare:** Urmărirea curierilor disponibili cu estimarea exactă a timpului de sosire în funcție de distanță și mijlocul de deplasare (bicicletă, scuter, mașină).
+- 🏷️ **Vouchere și promoții inteligente:** Aplicarea cupoanelor de reducere pe comenzi.
+- 🗺️ **Harta restaurantelor:** Vizualizarea localurilor partenere din proximitate.
+- 🛵 **Alocare curieri:** Atribuirea unui curier disponibil si contorizarea comenzilor livrate.
+- ⏱️ **Estimarea exactă a timpului de sosire:** Timp ce depinde de distanță și mijlocul de deplasare (bicicletă, scuter, mașină).
 
 ---
 
