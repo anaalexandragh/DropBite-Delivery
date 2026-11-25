@@ -12,7 +12,7 @@
         int comenziLivrate;
 
     public:
-        Curier(const std::string& nume, const std::string& vehicul, bool disponibil = true);
+        Curier(const std::string& nume, const std::string& vehicul, bool disponibil = true); //constructor de initializare
 
         const std::string& getNume() const;
         const std::string& getVehicul() const;

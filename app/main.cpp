@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <json.hpp>
+#include "Aplicatie.h"
 #include "Client.h"
 #include "Produs.h"
 #include "Curier.h"
@@ -9,6 +10,11 @@
 using nlohmann::json;
 
 int main() {
+    Aplicatie app;
+    app.deschide();
+    std::cout << app << "\n\n";
+
+    if (app.isDeschisa()){
     std::cout << "DROPBITE DELIVERY PLATFORM \n\n";
 
     //Citire date din fisiere json
@@ -94,6 +100,9 @@ int main() {
      curier1.finalizeazaLivrare();
     std::cout << "Status curier dupa livrare: " << curier1 << "\n";
     std::cout << "Comenzi livrate in total: " << curier1.getComenziLivrate() << "\n";
+    }
 
+    app.inchide();
+    std::cout << app << "\n";
     return 0;
 }

@@ -17,13 +17,14 @@
         double discount;
 
     public:
-        Comanda(int id, const Client& client, const Curier& curier, double taxaLivrare = 10.0);
+        Comanda(int id, const Client& client, const Curier& curier, double taxaLivrare = 10.0);  //constructor de initializare
        
-        Comanda(const Comanda& other); // Constructor de copiere
+        Comanda(const Comanda& other); //constructor de copiere
 
-        Comanda& operator=(const Comanda& other); //Operator de atribuire
+        Comanda& operator=(const Comanda& other); //operator de copiere
 
-        ~Comanda();  // Destructor
+        
+        ~Comanda();  //destructor
 
         //functii
         void adaugaProdus(const Produs& produs);   

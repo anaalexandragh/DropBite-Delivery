@@ -5,7 +5,7 @@
 #include <iostream>
 
 class Client {
-private:
+private:                                     //atributele private
     std::string nume;
     std::string email;
     std::string adresa;
@@ -13,16 +13,17 @@ private:
 
 
 public:
-    Client(const std::string& nume, const std::string& email, const std::string& adresa, const std::string& telefon);       //constructor
+    //constructor de initializare pt clasa Client
+    Client(const std::string& nume, const std::string& email, const std::string& adresa, const std::string& telefon);
     
-    const std::string& getNume() const;      //getter for nume
-    const std::string& getEmail() const;     //getter for email
-    const std::string& getAdresa() const;    //getter for adresa
-    const std::string& getTelefon() const;   //getter for telefon 
+    const std::string& getNume() const;      //getter nume
+    const std::string& getEmail() const;     //getter email
+    const std::string& getAdresa() const;    //getter adresa
+    const std::string& getTelefon() const;   //getter telefon 
     
-    void actualizeazaAdresa(const std::string& nouaAdresa); //actualizeaza adresa   
+    void actualizeazaAdresa(const std::string& nouaAdresa); // functie-actualizeaza adresa   
 
-    friend std::ostream& operator<<(std::ostream& out, const Client& client); //operator output
+    friend std::ostream& operator<<(std::ostream& out, const Client& client); //operator de afisare 
 
 };
 
